@@ -1,3 +1,4 @@
+//Strings concatenation
 #include <iostream>
 #include <string>
 using namespace std;
