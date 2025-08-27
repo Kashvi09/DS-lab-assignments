@@ -14,7 +14,7 @@ int main(){
 		cin>>a[i];
 	}
 	
-	cout<<"The matrix is: \n";
+	cout<<"The lower triangular matrix is: \n";
 	int i=0;
 	for(int j=0;j<n;j++){
 		for(int k=0;k<n;k++){
