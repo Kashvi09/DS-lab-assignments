@@ -38,15 +38,15 @@ void multiplySparse(int A[][3], int B[][3], int C[][3]){
     int temp[MAX][3];
     k = 1;
 	
-	for(int i=1;i<nz1;i++){
-		for(int j=1;j<nz2;j++){
+	for(int i=1;i<=nz1;i++){
+		for(int j=1;j<=nz2;j++){
 			if(A[i][1]==B[j][0]){
 				int row=A[i][0];
 				int column=B2[j][1];
 				int val=A[i][2]*B2[j][2];
-				
-				for(int x=0;x<k;x++){
-					if(temp[x][1]==row && temp[x][2]==column){
+
+				for(int x=1;x<k;x++){
+					if(temp[x][0]==row && temp[x][1]==column){
 						temp[x][2]+=val;
 						break;
 					}
@@ -98,7 +98,7 @@ int main(){
 	else{
 		B[0][0] = rows2; B[0][1] = cols2; B[0][2] = nonZero2;
 		cout << "Enter triplets (row col value) for first matrix:\n";
-		for (int i = 1; i <= nonZero1; i++) {
+		for (int i = 1; i <= nonZero2; i++) {
 		cin >> B[i][0] >> B[i][1] >> B[i][2];
 	}
 	
