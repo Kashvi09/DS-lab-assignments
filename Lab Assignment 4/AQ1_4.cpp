@@ -1,3 +1,5 @@
+//generating binary number for given decimal number
+
 #include <iostream>
 #include <queue>
 #include <string>

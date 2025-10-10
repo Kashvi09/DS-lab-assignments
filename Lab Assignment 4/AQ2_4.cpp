@@ -1,3 +1,5 @@
+//sorting elements using only 1 queue
+
 #include <iostream>
 #include <queue>
 using namespace std;
